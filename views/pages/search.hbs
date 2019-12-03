@@ -1,0 +1,72 @@
+<div class="container-fluid home">
+    <h3 style="margin: 24px 0;">Tìm kiếm</h3>
+    <div>
+        <form class="form-inline" action="">
+
+            <div class="form-group-inline">
+                <input placeholder="Tìm kiếm" type="text" class="form-control mb-2 mr-sm-2">
+            </div>
+
+            <div class="form-group-inline">
+                <select class="form-control mb-2 mr-sm-2" id="sel1">
+                    <option disabled selected>-- Nhà sản xuất --</option>
+                    <option>Apple</option>
+                    <option>Samsung</option>
+                    <option>Xiaomi</option>
+                    <option>Huawei</option>
+                </select>
+            </div>
+
+            <div class="form-group-inline">
+                <select class="form-control mb-2 mr-sm-2" id="sel1">
+                    <option disabled selected>-- Mức giá --</option>
+                    <option>Dưới 2tr</option>
+                    <option>Từ 2tr đến 3tr</option>
+                    <option>Từ 3tr đến 5tr</option>
+                    <option>Từ 5tr đến 10tr</option>
+                    <option>Từ 10tr đến 15tr</option>
+                    <option>Từ 15tr đến 20tr</option>
+                    <option>Trên 20tr</option>
+                </select>
+            </div>
+
+            <div class="form-group-inline">
+                <select class="form-control mb-2 mr-sm-2" id="sel1">
+                    <option disabled selected>-- Danh mục sản phẩm --</option>
+                    <option>Điện thoại di động</option>
+                    <option>Laptop</option>
+                    <option>Phụ kiện điện thoại</option>
+                </select>
+            </div>
+
+            <div class="form-group-inline">
+                <select class="form-control mb-2 mr-sm-2" id="sel1">
+                    <option disabled selected>-- Sắp xếp --</option>
+                    <option>Nổi bật nhất</option>
+                    <option>Giá từ cao đến thấp</option>
+                    <option>Giá từ thấp đến cao</option>
+                </select>
+            </div>
+
+            <button class="btn btn-primary mb-2 mr-sm-2">Tìm kiếm</button>
+
+        </form>
+    </div>
+    <div class="row">
+        {{#each products}}
+        <div class="col-md-3">
+            <div class="card" style="padding: 20px 0">
+                <div class="container">
+                    <a href="/product/123" class="thumb"><img class="card-img-top" src="{{thumb}}" alt="Card image"></a>
+                </div>
+                <div class="card-body">
+                    <p class="card-title">{{name}}</p>
+                    <p class="card-text price">{{price}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+
+</div>

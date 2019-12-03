@@ -1,0 +1,20 @@
+<div class="container-fluid home">
+    <h3 style="margin: 24px 0;">Điện thoại di động</h3>
+    <div class="row">
+        {{#each products}}
+        <div class="col-md-3">
+            <div class="card" style="padding: 20px 0">
+                <div class="container">
+                    <a href="/product/123" class="thumb"><img class="card-img-top" src="{{thumb}}" alt="Card image"></a>
+                </div>
+                <div class="card-body">
+                    <p class="card-title">{{name}}</p>
+                    <p class="card-text price">{{price}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+
+</div>
